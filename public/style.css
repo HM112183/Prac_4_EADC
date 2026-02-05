@@ -135,7 +135,7 @@ header {
 
 /* --- Hero Section --- */
 .hero {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, #001f3f 100%); /* Adjust gradient colors as desired */
+    background: linear-gradient(135deg, var(--dark-bg) 0%, #74aae1 100%); /* Adjust gradient colors as desired */
     color: #fff;
     padding: 100px 0;
     text-align: center;
