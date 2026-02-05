@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venue Booking</title>
+    <link rel="stylesheet" href="second.css" />
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            Festiva </div>
+
+        <nav class="nav-links">
+            <button class="button-33" onclick="event.stopPropagation(); toggleDropdown();">Location</button>
+            <div class="dropdown-content" onclick="event.stopPropagation()">
+                <a href="#" onclick="filterCity('Ahmedabad')">Ahmedabad</a>
+                <a href="#" onclick="filterCity('Surat')">Surat</a>
+                <a href="#" onclick="filterCity('Rajkot')">Rajkot</a>
+                <a href="#" onclick="filterCity('Vadodara')">Vadodara</a>
+            </div>
+
+            <button onclick="location.href='index.html'" class="button-33">Home</button>
+            <button onclick="location.href='First_interface.html'" class="button-33">First Interface</button>
+        </nav>
+
+        <div class="search-login">
+            <input type="text" placeholder="Search..." id="searchBar" />
+            <a href="login.html"><button class="button-33" role="button">Login</button></a>
+            <a href="signup.html"><button class="button-33" role="button">Signup</button></a>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <aside class="sidebar">
+            <h3>Filters</h3>
+
+            <label for="range">Range</label>
+            <select id="range">
+                <option value="">Select range</option>
+                <option value="0-5000">₹0 - ₹5000</option>
+                <option value="5000-10000">₹5000 - ₹10,000</option>
+                <option value="10000+">₹10,000+</option>
+            </select>
+
+            <label for="schedule">Schedule</label>
+            <select id="schedule">
+                <option value="">Select schedule</option>
+                <option value="morning">Morning</option>
+                <option value="evening">Evening</option>
+                <option value="night">Night</option>
+            </select>
+
+            <label for="event">Event Name</label>
+            <select id="event">
+                <option value="">Select event</option>
+                <option value="marriage">Marriage</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="corporate">Corporate Event</option>
+            </select>
+        </aside>
+
+        <section class="venue-section" id="venueSection">
+            <div class="venue-card" style="background-image: url('Club_07.jpg')">
+                <h3>Club O7 Party Plot</h3>
+                <p class="city">Ahmedabad</p>
+                <div class="venue-footer">
+                    <button onclick="toggleDetails(this)">Details</button>
+                    <div class="hidden-details">
+                        <p>Capacity: 500 People</p>
+                        <p>Price: &#8377;10,000</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="venue-card" style="background-image: url('babylon.jpg')">
+                <h3>Babylon Club </h3>
+                <p class="city">Ahmedabad</p>
+        
+                <div class="venue-footer">
+                    <button onclick="toggleDetails(this)">Details</button>
+                    <div class="hidden-details">
+                        <p>Capacity: 500 People</p>
+                        <p>Price: &#8377;10,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="venue-card" style="background-image: url('raj_thal.jpg')">
+                <h3>Raj Thal Banquet Hall</h3>
+                <p class="city">Ahmedabad</p>
+        
+                <div class="venue-footer">
+                    <button onclick="toggleDetails(this)">Details</button>
+                    <div class="hidden-details">
+                        <p>Capacity: 500 People</p>
+                        <p>Price: &#8377;10,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="venue-card" style="background-image: url('TGB_surat.jpg')">
+                <h3>TGB Surat</h3>
+                <p class="city">Surat</p>
+        
+                <div class="venue-footer">
+                    <button onclick="toggleDetails(this)">Details</button>
+                    <div class="hidden-details">
+                        <p>Capacity: 500 People</p>
+                        <p>Price: &#8377;10,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="venue-card" style="background-image: url('TGB_surat.jpg')">
+                <h3>TGB Surat</h3>
+                <p class="city">Surat</p>
+        
+                <div class="venue-footer">
+                    <button onclick="toggleDetails(this)">Details</button>
+                    <div class="hidden-details">
+                        <p>Capacity: 500 People</p>
+                        <p>Price: &#8377;10,000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="second.js"></script>
+    <script>
+        function toggleDropdown() {
+            const dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Close the dropdown when clicking outside of it
+        document.addEventListener('click', (event) => {
+            const dropdown = document.querySelector('.dropdown');
+            if (!dropdown.contains(event.target)) {
+                document.querySelector('.dropdown-content').style.display = 'none';
+            }
+        });
+
+        function bookVenue(venueName) {
+            window.location.href = `third_interface.html?venue=${encodeURIComponent(venueName)}`;
+        }
+    </script>
+
+</body>
+
+</html>

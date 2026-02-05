@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="login.css">
+    <script defer src="login.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-left">
+            <span class="logo-text">Festiva</span>
+        </div>
+    
+        <div class="nav-right">
+            <a href="signup.html"><button id="signButton" role="button">Signup</button></a>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <form class="event-form" id="auth-container">
+            <h1 style="font-family: 'Courier New', monospace; font-size: 32px; color: #a1a1a1; text-align: center; margin-top: 30px; margin-bottom: 30px; letter-spacing: 2px; text-transform: uppercase;">
+                Login
+            </h1>
+            <label for="username">Email:</label>
+            <input type="text" id="username" placeholder="Enter your email" required>
+            <div id="username-error" class="error-message"></div>  <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <div id="password-error" class="error-message"></div>  <button id="bookButton" type="button" onclick="func()">
+                Login
+            </button>
+        
+            <p>Don't have an account? <a href="signup.html">Sign Up here</a></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Contact Us:</p>
+        <p>Email: <a href="mailto:example@mail.com">example@mail.com</a></p>
+        <p>Instagram: <a href="#">@instagram</a></p>
+    </footer>
+</body>
+
+</html>

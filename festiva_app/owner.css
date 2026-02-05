@@ -1,0 +1,199 @@
+.dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2d3748;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f7fafc;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 2rem;
+    color: #63b3ed;
+    margin-bottom: 10px;
+}
+
+.dashboard-header p {
+    font-size: 1.1rem;
+    color: #a0aec0;
+}
+
+.management-details-section {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3e4c6a;
+}
+
+.management-details-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #63b3ed;
+    text-align: center;
+}
+
+.event-management {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #718096;
+}
+
+.event-management h3,
+.booking-details h3 {
+    color: #63b3ed;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.event-list li {
+    background-color: #4a5568;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #718096;
+}
+
+.event-list li span {
+    font-weight: bold;
+    color: #f56565;
+}
+
+.event-management form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.event-management form label {
+    font-weight: bold;
+    color: #cbd5e0;
+}
+
+.event-management form input,
+.event-management form textarea,
+.event-management form select {
+    padding: 10px;
+    border: 1px solid #718096;
+    border-radius: 5px;
+    background-color: #2d3748;
+    color: #f7fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.event-management form button {
+    padding: 12px 20px;
+    background: linear-gradient(to right, #63b3ed, #4299e1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.booking-details {
+    margin-top: 20px;
+}
+
+#booking-summary,
+.booking-list {
+    display: none;
+    /* Initially hide these elements */
+}
+
+.booking-summary {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #a0aec0;
+}
+
+.booking-list {
+    list-style: none;
+    padding: 0;
+}
+
+.booking-list li {
+    background-color: #4a5568;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #718096;
+}
+
+.booking-list li span {
+    font-weight: bold;
+    color: #f56565;
+    margin-right: 10px;
+}
+
+@font-face {
+    font-family: 'Milker';
+    src: url('fonts/Milker.woff2') format('woff2'),
+    url('fonts/Milker.woff') format('woff'),
+    url('fonts/Milker.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ... (Other styles) ... */
+
+.nav-left .logo-text {
+    font-family: 'Milker', sans-serif;
+    /* Apply Milker font */
+    font-size: 3rem;
+    font-weight: 600;
+    color: #63b3ed;
+}
+.button-33 {
+    background: linear-gradient(to right, #63b3ed, #4299e1); /* Blue gradient */
+    border-radius: 100px;
+    box-shadow: rgba(99, 179, 237, 0.2) 0 -25px 18px -14px inset, rgba(99, 179, 237, 0.15) 0 1px 2px, rgba(99, 179, 237, 0.15) 0 2px 4px, rgba(99, 179, 237, 0.15) 0 4px 8px, rgba(99, 179, 237, 0.15) 0 8px 16px, rgba(99, 179, 237, 0.15) 0 16px 32px;
+    color: white;
+    cursor: pointer;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+  }
+  
+  .button-33:hover {
+    box-shadow: rgba(99, 179, 237, 0.35) 0 -25px 18px -14px inset, rgba(99, 179, 237, 0.25) 0 1px 2px, rgba(99, 179, 237, 0.25) 0 2px 4px, rgba(99, 179, 237, 0.25) 0 4px 8px, rgba(99, 179, 237, 0.25) 0 8px 16px, rgba(99, 179, 237, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+  .delete-button, .delete-booking {
+    background: linear-gradient(to right, #f44336a7, #e53835c3); /* Red gradient */
+    border-radius: 100px;
+    box-shadow: rgba(244, 67, 54, 0.2) 0 -25px 18px -14px inset, rgba(244, 67, 54, 0.15) 0 1px 2px, rgba(244, 67, 54, 0.15) 0 2px 4px, rgba(244, 67, 54, 0.15) 0 4px 8px, rgba(244, 67, 54, 0.15) 0 8px 16px, rgba(244, 67, 54, 0.15) 0 16px 32px;
+    color: white;
+    cursor: pointer;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 14px; /* Slightly smaller than your other button */
+}
+
+.delete-button:hover, .delete-booking:hover {
+    box-shadow: rgba(244, 67, 54, 0.35) 0 -25px 18px -14px inset, rgba(244, 67, 54, 0.25) 0 1px 2px, rgba(244, 67, 54, 0.25) 0 2px 4px, rgba(244, 67, 54, 0.25) 0 4px 8px, rgba(244, 67, 54, 0.25) 0 8px 16px, rgba(244, 67, 54, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}

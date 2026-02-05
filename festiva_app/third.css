@@ -1,0 +1,142 @@
+/* You can customize this file with styles specific to the third interface */
+
+/* Apply color scheme from first.css */
+body {
+    font-family: 'Montserrat', sans-serif; /* Match font */
+    background: #1a202c; /* Darker background */
+    color: #d1d5db; /* Light text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 40px; /* Match padding to first.css form */
+    background: #2d3748; /* Darker form background */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger form shadow */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #a0aec0; /* Lighter label */
+    font-size: 1.05rem; /* Match label size */
+    font-weight: 500;   /* Match label weight */
+    margin-top: 15px;  /* Match label margin */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px; /* Match input padding */
+    margin-top: 8px;
+    border: 1px solid #4a5568; /* Darker input border */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: #4a5568; /* Darker input background */
+    color: #edf2f7;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #63b3ed;
+    box-shadow: 0 0 6px rgba(99, 179, 237, 0.4);
+}
+
+.form-group button {
+    background: linear-gradient(to right, #63b3ed, #4299e1); /* Darker button gradient */
+    color: white;
+    padding: 14px 28px; /* Match button padding */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem; /* Match button font size */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Stronger button shadow */
+    margin-top: 20px;
+}
+
+.form-group button:hover {
+    background: linear-gradient(to right, #4299e1, #63b3ed);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #2d3748, #3e4c6a); /* Darker gradient */
+    color: #edf2f7;
+    padding: 20px 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.logo {
+    font-family: 'Milker', sans-serif;
+    font-size: 3rem; /* Larger logo */
+    font-weight: 600;
+    color: #63b3ed; /* Brighter accent */
+}
+
+/* Footer styling (if needed in third_interface.html) */
+.footer {
+    background: linear-gradient(to right, #2d3748, #3e4c6a); /* Darker footer gradient */
+    color: #a0aec0;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+    color: #63b3ed;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #4299e1;
+}
+
+@font-face {
+    font-family: 'Milker';
+    src: url('fonts/Milker.woff2') format('woff2'),
+         url('fonts/Milker.woff') format('woff'),
+         url('fonts/Milker.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.booking-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #2d3748;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+.booking-form:hover {
+    transform: translateY(-5px); /* Added hover effect */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+/* ... (Your existing CSS) ... */

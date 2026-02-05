@@ -1,0 +1,83 @@
+body {
+  background: #268dd1;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #b26464;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 12px 0;
+  border: 1px solid #e83232;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #000000;
+  background: #f0f8ff;
+}
+
+button {
+  padding: 10px 18px;
+  margin-top: 10px;
+  margin-right: 8px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.save {
+  background: #28a745;
+  color: #fff;
+}
+
+button.edit {
+  background: #007bff;
+  color: #fff;
+}
+
+button.delete {
+  background: #dc3545;
+  color: #fff;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.todo-item span {
+  flex-grow: 1;
+}

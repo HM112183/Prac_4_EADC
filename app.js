@@ -1,9 +1,18 @@
-const express = require('express');
+
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 const app = express();
-app.get('/', (req, res) => {
-    res.send('Hello, this is a code by Harsh Malaviya to test pipeline and this is the second version ');
-  });
-  const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`API server listening on port ${port}`);
+
+// Fix __dirname in ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Serve static files from current folder
+app.use(express.static(__dirname));
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`portfolio running at http://localhost:${PORT}`);
 });

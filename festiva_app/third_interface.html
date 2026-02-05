@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Booking</title>
+    <link rel="stylesheet" href="third.css">
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Festiva</div>
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Confirm Your Booking</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="venue-name">Venue Name:</label>
+                    <input type="text" id="venue-name" name="venue-name" >
+                    <div id="venue-name-error" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="event-date">Event Date:</label>
+                    <input type="date" id="event-date" name="event-date" required>
+                    <div id="event-date-error" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="event-time">Event Time:</label>
+                    <input type="time" id="event-time" name="event-time" required>
+                    <div id="event-time-error" class="error-message"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-name">Your Name:</label>
+                    <input type="text" id="customer-name" name="customer-name" required>
+                    <div id="customer-name-error" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="customer-email">Your Email:</label>
+                    <input type="email" id="customer-email" name="customer-email" required>
+                    <div id="customer-email-error" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="additional-notes">Additional Notes:</label>
+                    <textarea id="additional-notes" name="additional-notes" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Confirm Booking</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="third.js"></script>
+</body>
+
+</html>

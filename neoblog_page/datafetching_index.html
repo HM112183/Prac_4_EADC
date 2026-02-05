@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeoBlog | Future Starts Here</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #f1f1f1;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: none;
+      border-radius: 20px;
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #fff;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-primary {
+      background-color: #00f2ff;
+      border: none;
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background-color: #00c8e6;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    footer a {
+      color: #00f2ff;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .brand-glow {
+      color: #00f2ff;
+      text-shadow: 0 0 10px #00f2ff;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand brand-glow" href="#">Harsh Malaviya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" title="Toggle navigation" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">Articles</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Cards -->
+  <div class="container py-5">
+    <div class="row g-5">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 p-3">
+          <img src="https://source.unsplash.com/400x250/?ai,future" class="card-img-top rounded-4" alt="AI Future">
+          <div class="card-body">
+            <h5 class="card-title">AI & The New Dawn</h5>
+            <p class="card-text">How artificial intelligence is reshaping every industry and redefining our world.</p>
+            <a href="#" class="btn btn-primary">Read Future</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 p-3">
+          <img src="https://source.unsplash.com/400x250/?space,exploration" class="card-img-top rounded-4" alt="Space">
+          <div class="card-body">
+            <h5 class="card-title">Beyond the Stars</h5>
+            <p class="card-text">A journey through space missions and the human ambition to colonize Mars.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 p-3">
+          <img src="https://source.unsplash.com/400x250/?cyberpunk,city" class="card-img-top rounded-4" alt="Cyber City">
+          <div class="card-body">
+            <h5 class="card-title">Urban Futures</h5>
+            <p class="card-text">How cyberpunk culture and smart cities influence the future of human life.</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+<div class="col-md-4">
+  <div class="card h-100 p-3">
+    <img src="https://source.unsplash.com/400x250/?metaverse,technology" class="card-img-top rounded-4" alt="Metaverse">
+    <div class="card-body">
+      <h5 class="card-title">Metaverse Realities</h5>
+      <p class="card-text">Explore how the metaverse is redefining communication, work, and digital identity.</p>
+      <a href="#" class="btn btn-primary">Enter Meta</a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 5 -->
+<div class="col-md-4">
+  <div class="card h-100 p-3">
+    <img src="https://source.unsplash.com/400x250/?robotics,future" class="card-img-top rounded-4" alt="Robotics">
+    <div class="card-body">
+      <h5 class="card-title">Rise of Robotics</h5>
+      <p class="card-text">The evolution of intelligent machines and their role in shaping tomorrow’s industries.</p>
+      <a href="#" class="btn btn-primary">See Evolution</a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 6 -->
+<div class="col-md-4">
+  <div class="card h-100 p-3">
+    <img src="https://source.unsplash.com/400x250/?blockchain,data" class="card-img-top rounded-4" alt="Blockchain">
+    <div class="card-body">
+      <h5 class="card-title">Decentralized World</h5>
+      <p class="card-text">A look into how blockchain is disrupting finance, governance, and trust on the web.</p>
+      <a href="#" class="btn btn-primary">Dive In</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-white py-4 mt-5">
+    <div class="container">
+      <p class="mb-2">Connect with us</p>
+      <div class="mb-3">
+        <a href="#" class="me-3 fs-4" title="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="me-3 fs-4" title="Twitter"><i class="bi bi-twit ter"></i></a>
+        <a href="#" class="me-3 fs-4" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="fs-4" title="GitHub"><i class="bi bi-github"></i></a>
+      </div>
+      <p class="mb-0">&copy; 2025 Harsh Malaviya | All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

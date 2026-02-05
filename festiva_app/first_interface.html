@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Horizon</title>
+    <link rel="stylesheet" href="first.css" />
+    <style>
+        /* Optional: Inline styles for slideshow images */
+        .slideshow {
+            background-image: url('https://source.unsplash.com/1600x900/?city,night');
+            /* Add more images for a slideshow effect (using JS) */
+        }
+
+        .error-message {
+            color: #ff6b6b;
+            font-size: 0.5em;
+            margin-top: 1px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-left">
+            <span class="logo-text">Festiva</span>
+        </div>
+        <div class="nav-right">
+            <a href="login.html"><button class="login-btn">Login</button></a>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <form class="event-form">
+            <label for="event-name">Event CodeName:</label>
+            <input type="text" id="event-name" placeholder="Enter event name" required>
+            <div class="error-message" id="eventNameError"></div>
+
+
+            <label for="capacity">Attendee Capacity:</label>
+            <select id="capacity" required title="Select attendee capacity">
+                <option value="">Select capacity...</option>
+                <option value="50">50-100</option>
+                <option value="100">100-200</option>
+                <option value="200+">200+</option>
+            </select>
+            <div class="error-message" id="capacityError"></div>
+
+
+            <label for="location">Event Location:</label>
+<input type="text" id="location" placeholder="Enter event location" required>
+            <div class="error-message" id="locationError"></div>
+
+
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" title="Select event date" required>
+            <div class="error-message" id="eventDateError"></div>
+
+
+            <button id="bookButton" type="button" onclick="window.location.href='second_interface.html'">
+                Initiate Search
+            </button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Contact Protocol:</p>
+        <p>Data Stream: <a href="mailto:example@mail.com">example@mail.com</a></p>
+        <p>Interlink: <a href="#">@interlink</a></p>
+    </footer>
+
+    <div class="slideshow"></div>
+
+    <script src="first.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #1a202c;
+  color: #d1d5db;
+  line-height: 1.6;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Slideshow (Full-Screen Background) */
+.slideshow,
+.js-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.5;
+  transition: background-image 1s ease-in-out;
+}
+
+.slideshow::after,
+.js-slideshow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  z-index: 2; /* Increased z-index */
+}
+
+.navbar::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: slideshow 20s infinite;
+  z-index: 1; /* Adjusted z-index */
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url('Club O7.jpeg');
+  }
+
+  25% {
+    background-image: url('img2.jpg');
+  }
+
+  50% {
+    background-image: url('Club O7.jpeg');
+  }
+
+  75% {
+    background-image: url('img4.jpg');
+  }
+
+  100% {
+    background-image: url('img1.jpg');
+  }
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  color: #edf2f7;
+  padding: 20px 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: auto;
+  min-height: 80px;
+}
+
+.nav-logo-left img {
+  width: 80px;
+  height: 80px;
+}
+
+.nav-title {
+  font-size: 1.4rem;
+}
+
+.nav-login {
+  display: flex;
+  align-items: center;
+}
+
+.nav-login a {
+  margin-left: 15px;
+}
+
+/* Buttons */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+#bookButtonWrapper {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+#bookButton {
+  background: linear-gradient(to right, #63b3ed, #4299e1);
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+#bookButton:hover {
+  background: linear-gradient(to right, #4299e1, #63b3ed);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+  font-family: 'Milker'; /* This is the name you'll use in font-family */
+  src: url('fonts/Milker.woff2') format('woff2'),
+       url('fonts/Milker.woff') format('woff'),
+       url('fonts/Milker.ttf') format('truetype'); /* Add all formats you have */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.festiva-text {
+  font-family: 'Milker', sans-serif; /* Use 'Milker', fallback to sans-serif */
+  font-size: 2.5em;          /* Adjust size as needed */
+  color: #ffffff;
+  /* Add other styling as desired (weight, spacing, etc.) */
+}
