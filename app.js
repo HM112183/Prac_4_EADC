@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 const port = process.env.PORT || 3000;
 const app = express();
+app.use(express.static(path.join(__dirname+'/public')))
 
 // Fix __dirname in ES Modules
 const __filename = fileURLToPath(import.meta.url);
